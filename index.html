@@ -2,73 +2,102 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CineAula - Cartelera</title>
-<meta name="description" content="CineAula es el cine escolar virtual donde puedes ver la cartelera y fechas de estreno de películas para estudiantes.">
-<meta name="keywords" content="CineAula, cine escolar, películas escolares, cartelera, colegio, aula interactiva, AIP">
-<meta name="author" content="Rober Dolores">
+  <title>CineAula - Cartelera Escolar</title>
+  <meta name="description" content="CineAula es el cine escolar virtual donde puedes ver la cartelera y fechas de estreno de películas para estudiantes.">
+  <meta name="keywords" content="CineAula, cine escolar, películas escolares, cartelera, colegio, aula interactiva, AIP">
+  <meta name="author" content="Rober Dolores">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      color: #fff;
     }
-    h1 {
+    header {
+      background-color: #000000dd;
+      padding: 20px;
       text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .descripcion {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      background-color: #00000088;
     }
     .peliculas {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      max-width: 600px;
-      margin: 0 auto;
+      padding: 40px 20px;
     }
     .pelicula {
-      background: #fff;
-      border-radius: 8px;
+      background: #ffffff11;
+      border-radius: 12px;
       padding: 10px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .pelicula:hover {
+      transform: scale(1.05);
     }
     .pelicula img {
-      width: 120px;
-      height: auto;
-      border-radius: 4px;
-      margin-right: 15px;
-    }
-    .pelicula-info {
-      flex: 1;
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
     }
     .titulo {
-      font-size: 1.2em;
-      margin: 0;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #fff;
     }
     .fecha {
-      color: #555;
-      margin-top: 5px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    footer {
+      background-color: #000000cc;
+      text-align: center;
+      padding: 15px;
+      color: #fff;
     }
   </style>
 </head>
 <body>
 
-  <h1>CineAula 🎥</h1>
+  <header>
+    <h1>CineAula 🎬</h1>
+  </header>
+
+  <div class="descripcion">
+    Bienvenidos a <strong>CineAula</strong>, el cine escolar virtual del Colegio AIP. Aquí podrás ver la cartelera de películas educativas destinadas a estudiantes, docentes y padres de familia. ¡Disfrutemos del cine como herramienta para aprender y convivir!
+  </div>
+
   <div class="peliculas">
     <div class="pelicula">
       <img src="pitufos.jpg" alt="Pitufos">
-      <div class="pelicula-info">
-        <p class="titulo">Los Pitufos</p>
-        <p class="fecha">Estreno: 12 de julio</p>
-      </div>
+      <div class="titulo">Los Pitufos</div>
+      <div class="fecha">Estreno: 12 de julio</div>
     </div>
     <div class="pelicula">
-      <img src="fantasticos.jpg" alt="Los 4 fantásticos">
-      <div class="pelicula-info">
-        <p class="titulo">Los 4 Fantásticos</p>
-        <p class="fecha">Estreno: 24 de julio</p>
-      </div>
+      <img src="fantasticos.jpg" alt="Los 4 Fantásticos">
+      <div class="titulo">Los 4 Fantásticos</div>
+      <div class="fecha">Estreno: 24 de julio</div>
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 CineAula - Proyecto educativo AIP
+  </footer>
 
 </body>
 </html>
