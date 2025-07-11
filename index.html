@@ -9,7 +9,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f4fa;
+      background: linear-gradient(to bottom right, #f7d66d, #cce6f4, #f98c8c);
       margin: 0;
       padding: 0;
       color: #333;
@@ -19,16 +19,21 @@
       padding: 20px;
       text-align: center;
       color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
     }
     header h1 {
       margin: 0;
       font-size: 2.8em;
     }
     .logo-colegio {
-      margin: 15px auto;
-      width: 120px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      border: 3px solid #fff;
+      border: 2px solid #fff;
+      object-fit: cover;
     }
     .descripcion {
       text-align: justify;
@@ -87,8 +92,8 @@
 <body>
 
   <header>
-    <h1>CineAula 🎬</h1>
     <img src="colegio.jpg" alt="Logo del Colegio San José" class="logo-colegio">
+    <h1>CineAula 🎬</h1>
   </header>
 
   <div class="descripcion">
